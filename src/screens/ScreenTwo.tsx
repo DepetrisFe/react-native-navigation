@@ -1,10 +1,17 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
+import {styles} from '../theme/appTheme';
 
 export const ScreenTwo = () => {
+  const navigator = useNavigation();
   return (
-    <View>
+    <View style={styles.globalMargin}>
       <Text>Pagina 2</Text>
+      <Button
+        title="Pagina 3"
+        onPress={() => navigator.navigate('ScreenThree')}
+      />
     </View>
   );
 };
