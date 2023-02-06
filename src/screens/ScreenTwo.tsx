@@ -7,7 +7,7 @@ export const ScreenTwo = () => {
   const navigator = useNavigation();
   return (
     <View style={styles.globalMargin}>
-      <Text>Pagina 2</Text>
+      <Text style={styles.title}>Pagina 2</Text>
       <Button
         title="Pagina 3"
         onPress={() => navigator.navigate('ScreenThree')}
